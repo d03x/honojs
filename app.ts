@@ -2,7 +2,7 @@ import { serveStatic } from "@hono/node-server/serve-static";
 import { Hono } from "hono";
 import { LoginController } from "./controllers/auth-controller";
 const app = new Hono();
-app.get("/login", LoginController);
+app.get("/api/login", LoginController);
 //######### SETUP STATIC FILE################
 
 // app.get("/assets",serveStatic({
